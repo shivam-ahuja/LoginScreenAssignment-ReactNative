@@ -5,7 +5,7 @@
  */
 
 import React, {Component} from 'react';
-import Splash from './components/splash/index.js';
+import MainScreen from './components/main/index.js';
 import {
     Platform,
     StyleSheet,
@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>
-                <Splash/>
+                <MainScreen/>
             </View>
         );
     }
