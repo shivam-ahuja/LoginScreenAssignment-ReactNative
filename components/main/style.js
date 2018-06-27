@@ -3,7 +3,7 @@ import {StyleSheet, Dimensions} from 'react-native'
 export const style = StyleSheet.create({
     container: {},
     logo: {top: 20},
-    imageBackground: {
+    image_background: {
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height,
         position:'absolute'
@@ -15,11 +15,11 @@ export const style = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
     },
-    mainContent: {
+    main_content: {
         flex: 1,
         flexDirection: 'column',
     },
-    loginContainer: {
+    login_Container: {
         flex: 1.5,
         justifyContent: 'flex-end',
         flexDirection: 'column',

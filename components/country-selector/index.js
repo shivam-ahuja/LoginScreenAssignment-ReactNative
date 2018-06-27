@@ -44,9 +44,7 @@ class CountrySelector extends Component {
         return (
             <TouchableOpacity
                 activeOpacity={1}
-                onPress={() => {
-                    this.onSelectCountry(country.item)
-                }}
+                onPress={this.onSelectCountry.bind(this,country.item)}
             >
                 <CountryListitem image={countries[country.item].flag} name={countries[country.item].name.common}/>
             </TouchableOpacity>
@@ -63,7 +61,7 @@ class CountrySelector extends Component {
             >
                 <View style={style.background}>
                 <View style={style.parent}>
-                    <View style={style.modalContainer}>
+                    <View style={style.modal_container}>
                         <View style={style.header}>
                             <Icon name="search" size={18}/>
                             <TextInput
@@ -73,7 +71,7 @@ class CountrySelector extends Component {
                                 underlineColorAndroid={'transparent'}
                                 style={[
                                     style.input,
-                                    style.inputOnly
+                                    style.input_only
                                 ]}
                                 onChangeText={this.handleFilterChange}
                                 value={this.state.filter}
@@ -86,7 +84,7 @@ class CountrySelector extends Component {
                             initialNumToRender={30}
                             maxToRenderPerBatch={400}
                             removeClippedSubviews={true}
-                            style={style.contentContainer}
+                            style={style.content_container}
                         />
                     </View>
                 </View>

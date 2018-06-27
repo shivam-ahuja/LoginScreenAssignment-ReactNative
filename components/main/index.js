@@ -8,11 +8,11 @@ export default class Splash extends React.Component {
         return (
             <View style={style.container}>
                 {/*<Image style={style.logo} source={require('../../assets/images/logo.png')}/>*/}
-                <ImageBackground style={style.imageBackground} source={require('../../assets/images/banner.png')}>
+                <ImageBackground style={style.image_background} source={require('../../assets/images/banner.png')}>
                 </ImageBackground>
                 <View style={style.background}>
-                    <View style={style.mainContent}>
-                        <View style={style.loginContainer}>
+                    <View style={style.main_content}>
+                        <View style={style.login_Container}>
                             <Text style={style.login}>Log In/Sign Up</Text>
                         </View>
                         <SignUp />

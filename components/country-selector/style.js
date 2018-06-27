@@ -17,7 +17,7 @@ export const style = StyleSheet.create({
         alignItems:'center',
         flex: 1,
     },
-    modalContainer: {
+    modal_container: {
         backgroundColor: 'white',
         borderRadius: 3,
 
@@ -37,44 +37,12 @@ export const style = StyleSheet.create({
         marginTop: 3,
         width: '100%'
     },
-    inputOnly: {
+    input_only: {
         marginLeft: 3,
         fontSize: 21
     },
-    touchFlag: {
-        height: 37,
-        width: "100%",
-        flexDirection: 'row',
-        backgroundColor: 'rgba(211,211,211,0.2)'
-
-    },
-    countryCode: {
-        marginLeft: 10,
-        paddingBottom: 10,
-        marginTop: 8,
-        textAlignVertical: 'center',
-        color: 'rgb(169,167,167)',
-        fontSize: 17,
-
-    },
-    downarrow: {
-        paddingTop: 10
-    },
-    contentContainer: {
+    content_container: {
         flexGrow: 0,
         margin: 10,
-    },
-    scrollItems: {
-        flexDirection: 'row',
-    },
-    imgStyle: {
-        resizeMode: 'contain',
-        width: 26,
-        height: 26,
-        marginLeft: 20,
-        opacity: 0.8,
-        marginTop: 18,
-        marginBottom: 4
-
     }
 })

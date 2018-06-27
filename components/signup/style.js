@@ -1,7 +1,7 @@
 import {StyleSheet, Dimensions} from 'react-native'
 
 export const style = StyleSheet.create({
-    signupDialog: {
+    signup_dialog: {
         width: 310,
         height: 330,
         backgroundColor: 'white',
@@ -33,7 +33,7 @@ export const style = StyleSheet.create({
         marginTop: 35,
         marginBottom:35
     },
-    orText: {
+    or_text: {
         fontWeight: 'bold'
     },
     input_container: {
